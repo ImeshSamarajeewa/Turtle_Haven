@@ -1,0 +1,1122 @@
+/********************Bentota Hatchery**********************/
+
+.header5{
+    min-height: 100vh;
+    width:100% ;
+    background-image:linear-gradient(rgba(1,9,41,0.4),rgba(1, 9, 41, 0),rgba(1, 9, 41, 0.4)),  url(BenHatch.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.Ben{
+    background-color: antiquewhite;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+@media screen and (min-width: 300px) and (max-width:1000px){
+    p{
+        font-size: 1rem;
+    }
+}
+    
+
+body{
+    background-color:aqua;
+}
+
+
+.header{
+    min-height: 100vh;
+    width:100% ;
+    background-image:linear-gradient(rgba(1,9,41,0.4),rgba(1, 9, 41, 0),rgba(1, 9, 41, 0.4)),  url(./Turtle.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width:1000px){
+    nav {
+        flex-direction: column;
+    }
+}
+
+nav{
+    display: flex;
+    padding: 1% 1.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 5.625rem;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding: .5rem .75rem;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: aliceblue;
+    text-decoration:none;
+    font-size: 1rem;
+}
+
+.nav-links ul li::after{
+    content:"";
+    width: 0%;
+    height: .5rem;
+    background:rgba(86, 45, 18, 0.750) ;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 90%;
+    height: .1875rem;
+}
+
+
+.text-box{
+    width: 90%;
+    color:azure;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 350%;
+}
+.text-box p{
+    font-size: 15px;
+}
+
+
+@media  screen and (min-width:300px) and (max-width:1000px){
+    .text-box h1{
+        font-size: 35px ;
+    }
+    .Turtle1{
+        display: block;
+    }
+    .list-box{
+        flex-direction: column;
+    }
+    .image-row{
+        flex-direction: column;
+    }
+    .image-row p{
+        font-size: 1rem;
+    }
+    .Turtle1Text{
+        flex-direction: column;
+    }
+    .footer-row{
+        flex-direction: column;
+    }
+  }
+
+
+
+/*Description*/
+
+p{   
+    font-size:20px;
+}
+
+@media screen and (min-width:300px) and (max-width:1000px){
+    p{
+        font-size: .85rem;
+    }
+}
+
+.description p{
+    text-align: justify;
+}
+
+.description{
+    width: 90%;
+    text-align:center;
+    margin: auto;
+    padding-top: 3%;
+}
+
+/*Our mission*/
+
+
+.topic1{
+    max-width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;   
+}
+
+
+.topic1 h1{
+    font-size: 2.8125rem;
+    margin-bottom: 5%;    
+    color: rgb(0, 0, 105);
+}
+
+/*Box*/
+
+
+.list-box {
+    display: flex;
+    width: 80%;
+    padding-left: 10%;
+    font-size: .9375rem;
+  }
+  
+  .typeList {
+    flex: 1;
+    border-bottom: .375rem solid grey;
+    border-right: .375rem solid black;
+    border-left: .375rem solid grey;
+    border-top: .375rem solid black;
+    margin: .625rem;
+    text-align: center;
+    padding: 3% 1% 3%;
+  }
+  
+  .hatcheryList:first-child {
+    border-bottom: .375rem solid grey;
+    border-right: .375rem solid grey;
+    border-left: .375rem solid black;
+    border-top: .375rem solid black;
+    margin-right: 6.25rem;
+    text-align: center;
+    flex: 1;
+  }
+
+
+  .hatcheryList li{
+    margin-left: 10%;
+  }
+
+  ol.list{
+    padding-top: 5%;
+    display: inline-block;
+    font-size: 1.0625rem;
+    color: brown;
+    line-height: 180%;
+  }
+
+  
+  /*You will also like*/
+
+ 
+.Topic2{
+    font-size: 2.8125rem;
+    text-align: center;
+    margin-top: 6.25rem;
+    margin-bottom: 5%;
+}
+
+@media screen and (min-width:300px) and (max-width:1000px){
+    .Topic2{
+        font-size: 1.5rem;
+    }
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  .image-container {
+    flex-basis: 30%;
+    text-align: center;
+    overflow: hidden;
+    background-color:aliceblue;
+    border-radius: 3%;
+    margin: 3%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 17.5rem;
+    transition: transform 0.3s;
+  }
+  
+  .image-description {
+    margin-top: .625rem;
+  }
+
+   .image-container:hover img{
+    transform: scale(1.05);
+  }
+
+  .image-container:hover{
+    background-color:rgba(128, 128, 128, 0.347);
+  }
+
+
+  /*Footer*/
+
+  .footer{
+    margin-top: 5%;
+  }
+
+  .back-to-top{
+    position: relative;
+    bottom: 6.25rem;
+    right: .9375rem;
+    padding: .625rem .9375rem;
+    border-radius: .75rem;
+    background-color: #000;
+    color: #ffffff;
+    text-decoration: none;
+    float: right;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .back-to-top:hover{
+    opacity: 0.7;
+  }
+
+  .footer {
+    background-color:cadetblue;
+    margin: 0;
+    padding-top: 2.5rem;
+    padding-left: 2.8125rem;
+    padding-bottom: 1.25rem;
+    padding-right: 2.5rem;
+    box-sizing: border-box;
+    margin-top: 12%;
+}
+
+.foot-container {
+    max-width: 100%;
+    margin: .3125rem;
+}
+
+.footer-row {
+    display: grid;
+    grid-template-columns: 18% 25% 64%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3.125rem;
+}
+
+.footer-col {
+    padding: 0 .3125rem;
+}
+
+@media screen and (min-width:300px) and (max-width:1000px) {
+    .footer-col{
+        display: none;
+    }
+    
+}
+
+.footer-col-1 {
+    line-height: 90%;
+    margin-top: 1.25rem;
+}
+
+.footer-col-2 {
+    line-height: 90%;
+    margin-top: 1.25rem;
+}
+
+.footer-col h4 {
+    font-size: 1.125rem;
+    color: #ffffff;
+    margin-bottom: .625rem;
+    font-weight: 550;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: .125rem;
+    box-sizing: border-box;
+    width: 3.125rem;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: .625rem;
+}
+
+.li1, .li2, .li3, .li4 {
+    font-size: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(46, 46, 46);
+    display: block ;
+    transition: 0.3s ease;
+}
+
+.li1:hover {
+    color: #ffffff;
+    font-style: 500;
+} 
+
+.li2:hover {
+    color: #ffffff;
+    font-style: 500;
+}
+
+.li3:hover {
+    color: #ffffff;
+    font-style: 500;
+} 
+
+.li4:hover {
+    color: #ffffff;
+    font-style: 500;
+}
+
+.footer-col-socials {
+    padding: 10%;
+    padding: 0 .3125rem;
+    display: inline;
+    margin-left: 80%
+}
+
+@media screen and (min-width:300px) and (max-width:1000px) {
+    .footer-col-socials{
+        display: flex;
+
+    }
+
+    .social-links{
+        height:20px;
+        width: 20px;
+        display: flex;
+        margin-top: 10px;
+        gap:40%;
+        scale: 100%;
+    }
+}
+
+.footer-col-socials{
+    margin-left: 80%;
+}
+
+.footer-col-socials a{
+    margin-left: 4%;
+}
+
+.social-links a {
+    height: 1.25rem;
+    width: 1.25rem;
+    display: inline-block;
+    margin-top: .625rem;    
+}
+
+.social-links {
+    margin-top: .3125rem;
+}
+
+.social-links img {
+    margin: .3125rem;
+}
+
+.socialsh4 {
+    margin-left: 1.875rem;
+}
+
+.footer{
+    box-sizing: border-box;
+}
+
+.footer h4 {
+    color: white;
+    display: inline;
+}
+
+.footer h5 {
+    color: rgb(46, 46, 46);
+    margin-top: 3.75rem;
+    font-weight: 300;
+    font-size: .9375rem;
+    margin-bottom: 1.25rem;
+    margin-left:.625rem ;
+    letter-spacing:.0313rem;
+}
+
+
+
+/************About us************/
+
+.header1{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6)),  url(./BT.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+ol.listA{
+    list-style-type: decimal;
+    max-width: 70%;
+    padding-top: 2%;
+    line-height: 170%;
+    text-align:justify;
+    font-size: 1.3125rem;
+    color:darkgreen;
+    margin-left: 15%;
+    margin-bottom: 5%;
+  }
+
+  @media screen and (min-width:300px) and (max-width:1000px){
+    ol.listA{
+        font-size: .8rem;
+    }
+  }
+
+  ol.listA li{
+    margin-bottom:.8125rem ;
+  }
+
+  .image-containerA {
+    flex-basis: 30%;
+    text-align: center;
+    overflow: hidden;
+    background-color:aliceblue;
+    border-radius: 3%;
+    margin: 3%;
+  }
+  
+  .image-containerA img {
+    width: 100%;
+    height: auto;
+    transition: transform ease 0.3s;
+  }
+  
+    .image-containerA:hover img{
+    transform: scale(1.04);
+  }
+
+  .image-containerA:hover{
+    background-color:turquoise;
+  }
+
+
+
+/***********Categories*************/
+
+.header2{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6)),  url(./Category.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.Turtle1 {
+    background-color: #e6f6fe;
+    justify-content: space-between;
+    padding: 2.5rem;
+    max-width: 95%;
+    margin: 2% auto 0 auto ;
+}
+
+.Turtle1Text {
+    display: flex;
+}
+
+.Turtle1 h1 {
+    color: #01013f;
+    font-size: 1.875rem;
+}
+
+@media screen and (min-width:300px) and (max-width:1000px) {
+    .Turtle1 h1{
+        font-size: 25px;
+    }
+    .Turtle1Map ul li{
+        font-size: .8rem;
+    }
+
+}
+
+.Turtle1 h2{
+    color: #01013f;
+    font-size: 1.625rem;
+}
+
+.Turtle1 p {
+    color: #06257a;
+    padding-top: 2%;
+    
+}
+
+.Turtle1 img {
+    height: 15.625rem;
+    margin-left: 1%;
+    margin-right: 3%;
+}
+
+.Turtle1Map {
+    display: flex;
+    margin-left: 3.5%;
+}
+
+
+
+@media  screen and (min-width:300px) and (max-width:1000px){
+    .Turtle1Map{
+        flex-direction: column;
+    }
+    .Turtle1Map iframe{
+        width: 80%;
+        height: 100%;
+    }
+    
+}
+
+
+
+.Turtle1 iframe {
+    margin-top:5%;
+}
+
+.text2{
+    color:#06257a;
+    font-size: 1.25rem;
+    margin-top: 5%;
+    margin-left: 8%;
+}
+
+.Tcontainer{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.Tcontainer table ul li{
+    margin-left:  10px; ;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5% auto;
+
+    
+  }
+
+  
+  
+  
+th, td{
+    padding: .4375rem;
+    text-align: left;
+    border: .0625rem solid #ddd;
+    padding-left: 3%;
+    line-height: 130%;
+  }
+  
+th{
+    background-color: rgb(103, 214, 177);
+    text-align: center;
+  }
+
+
+
+
+  /***********Hikkaduwa Hatchery*************/
+
+
+
+
+  .header3{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6)),  url(./HikHatch.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*Description*/
+
+
+.description h1{
+    font-size: 2.5rem;
+}
+  
+.HP{
+    padding:4%;
+}
+
+.HMap{
+    margin: 2%; 
+}
+
+@media screen and (min-width:300px) and (max-width:1000px){
+
+    .HMap iframe{
+        width: 80%;
+        height: 100%;
+    }
+}
+
+.HL{
+    text-align: center;
+
+}
+
+.hl{
+    display: inline-block;
+}
+
+.HL h1{
+    padding-left: -4%;
+    padding-top: 10%;
+}
+
+.MH{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.hl{
+    font-size: 1.25rem;
+    padding: 3%;
+    margin-left: 1%;
+}
+
+.HL p{
+    color:chocolate;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+/*Image row*/
+
+.image-container-H {
+    flex-basis: 30%;
+    text-align: center;
+    overflow: hidden;
+    background-color:aliceblue;
+    border-radius: 3%;
+  }
+  
+  .image-container-H img {
+    width: 100%;
+    height: 17.5rem;
+    transition: transform 0.3s;
+  }
+  
+  .image-description-H {
+    margin-top: .9375rem;
+    line-height: 120%;
+  }
+
+   .image-container-H:hover img{
+    transform: scale(1.05);
+  }
+
+  .image-container-H:hover{
+    background-color:rgba(97, 117, 52, 0.347);
+  }
+
+  /*Gallery of Hikkaduwa hatchery*/
+
+.GH{
+    padding-top: 10%;
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 1.875rem;
+}
+
+@media screen and (min-width:300px) and (max-width:1000px) {
+    .GH{
+        font-size: 20px;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 2%;
+    margin-left: 4%;
+    margin-bottom: 10%;
+  }
+  
+.gallery-row {
+    display: flex;
+    column-gap: 1%;
+    margin-left: 1%;
+}
+    
+.gallery img {
+    width: 23%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    align-items: center;
+    transform: scale(1.08);
+}
+
+
+
+/****************Threats to turtles****************/
+
+
+.header4{
+    min-height: 100vh;
+    width:100% ;
+    background-image:linear-gradient(rgba(1,9,41,0.4),rgba(1, 9, 41, 0),rgba(1, 9, 41, 0.4)),  url(./Threat1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.Threat {
+    background-color:aquamarine;
+    justify-content: space-between;
+    padding: 2.5rem;
+    max-width: 95%;
+    margin: 2% auto 0 auto ;
+}
+
+.ThreatText {
+    display: flex;
+}
+
+@media  screen and (min-width:300px) and (max-width:1000px){
+    .ThreatText{
+        flex-direction: column;
+    }
+}
+
+
+.Threat h1 {
+    color:#000;
+    font-size: 1.875rem;
+}
+
+.Threat h2{
+    color: #01013f;
+    font-size: 1.625rem;
+}
+
+.Threat P {
+    color:brown;
+    font-size: 1.25rem;
+    padding-top: 2%;   
+}
+
+@media  screen and (min-width:300px) and (max-width:1000px){
+    .Threat P{
+        font-size: 1rem;
+    }
+}
+
+.Threat img {
+    height: 15.625rem;
+    margin-left: 1%;
+    margin-right: 3%;
+    padding-bottom: 5%;
+}
+
+p.TP{
+    padding-top: 7%;
+}
+
+.Hatchery-Links{
+    padding: 5%;
+    text-align: center;
+}
+
+.Hatchery-Links a{
+    text-decoration: none;
+}
+.RM{
+    float: right;
+    text-decoration: none;
+    color:red;
+    font-weight: 500;
+}
+
+.RM:hover{
+    color: #000;
+    font-weight: 800;
+}
+
+.HL-heading{
+    padding-bottom: 2%;
+}
+
+
+
+/*******************Other hatcheries(drop down)******************/
+
+.dropdown {
+    display: inline-block;
+    margin-bottom: -1.9%;
+
+}
+  
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: .875rem .875rem;
+    background-color: inherit;
+    font-size: 1rem;
+    border-bottom: .125rem solid transparent;
+    transition: all .55s ease;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 10rem;
+    box-shadow: 0rem .5rem 1rem 0rem rgba(132, 10, 10, 0.2);
+    background-color: #00000079;
+    z-index: 1;
+    align-items: center;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: .75rem .9375rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: #ffffff;
+    font-size: .9375rem;
+    font-weight: 600;
+    border-bottom: .125rem solid transparent;
+    transition: all .55s ease;
+}
+  
+.dropdown-content a:hover {
+   color: white;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+
+.dropbtn:hover{
+    color:antiquewhite;
+    transition: 600ms;
+}
+
+
+
+
+
+
+/*******************Purchase and Donate********************/
+
+.header7{
+    min-height: 100vh;
+    width:100% ;
+    background-image:linear-gradient(rgba(1,9,41,0.4),rgba(1, 9, 41, 0),rgba(1, 9, 41, 0.4)),  url(PD.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.text-box-P{
+    width: 90%;
+    color:#e6f6fe;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box-P h1{
+    font-size: 4.0625rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 1.5625rem;
+    min-height:70vh;
+    padding-bottom: 4.375rem;
+}
+
+.container form{
+    padding: 1.25rem;
+    width: 43.75rem;
+    background: #fff;
+    box-shadow: 0 .3125rem .625rem rgba(0,0,0,1);
+}
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:.9375rem;
+}
+.container form .row .col
+{
+    flex:1 1 15.625rem;
+}
+.container form .row .col .title
+{
+    font-size: 1.25rem;
+    color: #333;
+    padding-bottom: .3125rem;
+    text-transform: uppercase;
+}
+
+.container form .row .col .inputbox
+{
+    margin: .9375rem 0;
+}
+.container form .row .col.inputbox span
+{
+    margin-bottom: .625rem;
+    display: block;
+}
+.container form .row .col.inputbox input
+{
+    width: 100%;
+    border: .0625rem solid #ccc;
+    padding: .625rem .9375rem;
+    text-transform: none;
+
+}
+.container form .row .col.inputbox input:focus{
+    border: .0625rem solid #000;
+}
+.container form .row .col .flex{
+    display: flex;
+    gap: .9375rem;
+}
+.container .form .row .col .flex .inputbox{
+    margin-top: .3125rem;
+}
+.container form .row .col .inputbox img{
+    height: 2.125rem;
+    margin-top: .3125rem;
+    filter:drop-shadow(0 0 .0625rem #000);
+
+}
+
+.container form .submit-btn{
+    width: 100%;
+    padding: .75rem;
+    font-size: 1.0625rem;
+    background: red;
+    color: #fff;
+    margin-top: .3125rem;
+    cursor: pointer;
+}
+.container form .submit-btn:hover{
+    background:darkblue;
+}
+
+
+/*Store*/
+
+
+.storeH{
+    font-size: 2.3rem;
+    text-align: center;
+    color: #000;
+    padding-bottom: 4%;
+}
+
+@media screen and(min-width:300px) and (max-width:1000px){
+    .storeH{
+        font-size: 20px;
+    }
+}
+
+.storeH span{
+    -webkit-text-fill-color: transparent;
+}
+
+
+.store-2 {
+    display: flex;
+    justify-content: center;
+    scale: 80%;
+    margin-top: -5rem;
+}
+
+.store img {
+    border: 0.25rem solid #e6f6fe;
+}
+
+.store-2 img {
+    border: 0.25rem solid #e6f6fe;
+}
+
+
+.store-gallery {
+    margin: 0.3125rem;
+    background-color:  #e6f6fe;
+    float: left;
+    width: 20%;
+}
+
+.store-desc {
+    padding: 0.9375rem;
+    text-align: left;
+    font-weight: 500;
+    font-size: 0.9375rem;
+}
+
+.store-desc ol {
+    padding: 0.9375rem;
+}
+
+.store-desc p {
+    font-size: 1rem;
+    text-align: center;
+    color: #050566;
+}
+
+.store-desc p span {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.image-store :hover{
+    scale: 1.06;
+    transition:.5s;
+}
